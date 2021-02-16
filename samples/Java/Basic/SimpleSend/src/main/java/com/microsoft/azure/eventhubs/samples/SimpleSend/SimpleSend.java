@@ -24,10 +24,10 @@ public class SimpleSend {
             throws EventHubException, ExecutionException, InterruptedException, IOException {
 
         final ConnectionStringBuilder connStr = new ConnectionStringBuilder()
-                .setNamespaceName("Your Event Hubs namespace name") // to target National clouds - use .setEndpoint(URI)
-                .setEventHubName("Your event hub")
-                .setSasKeyName("Your policy name")
-                .setSasKey("Your primary SAS key");
+                .setNamespaceName("eventhubns-14700") // to target National clouds - use .setEndpoint(URI)
+                .setEventHubName("hubname-7bbc8e330e")
+                .setSasKeyName("Endpoint=sb://eventhubns-14700.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AtXKW2rZzXqYnaiK/htHC8UNIB46xJs5ESOIWdN5d0M=")
+                .setSasKey("AtXKW2rZzXqYnaiK/htHC8UNIB46xJs5ESOIWdN5d0M=");
 
         final Gson gson = new GsonBuilder().create();
 

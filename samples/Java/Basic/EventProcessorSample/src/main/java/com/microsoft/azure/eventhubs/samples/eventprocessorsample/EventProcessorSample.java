@@ -28,13 +28,13 @@ public class EventProcessorSample
     	// account. All instances of EventProcessorHost which will be consuming from the same Event Hub and consumer
     	// group must use the same Azure Storage account and container name.
     	String consumerGroupName = "$Default";
-    	String namespaceName = "----ServiceBusNamespaceName----";
-    	String eventHubName = "----EventHubName----";
-    	String sasKeyName = "----SharedAccessSignatureKeyName----";
-    	String sasKey = "----SharedAccessSignatureKey----";
-    	String storageConnectionString = "----AzureStorageConnectionString----";
-    	String storageContainerName = "----StorageContainerName----";
-    	String hostNamePrefix = "----HostNamePrefix----";
+    	String namespaceName = "eventhubns-14700";
+    	String eventHubName = "hubname-7bbc8e330e";
+    	String sasKeyName = "Endpoint=sb://eventhubns-14700.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AtXKW2rZzXqYnaiK/htHC8UNIB46xJs5ESOIWdN5d0M=";
+    	String sasKey = "AtXKW2rZzXqYnaiK/htHC8UNIB46xJs5ESOIWdN5d0M=";
+    	String storageConnectionString = "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=storagename23447;AccountKey=nzRjxWkUe6+OCc7PpofPsFaPbIL3W+OJItLj9HtDb+Hb2Jds2kaFqXLKzwE5dyOUfZXyutb/V5hwBIBSJe7cUw==";
+    	String storageContainerName = "messages";
+    	String hostNamePrefix = "storagename23447";
     	
     	// To conveniently construct the Event Hub connection string from the raw information, use the ConnectionStringBuilder class.
     	ConnectionStringBuilder eventHubConnectionString = new ConnectionStringBuilder()
